@@ -9,7 +9,7 @@ function GenreGrid({ onToggleGenre, selectedGenres }) {
   const [newGenre, setNewGenre] = useState("");
 
   useEffect(() => {
-    fetch("https://pear-misty-comet.glitch.me/")
+    fetch("https://pear-misty-comet.glitch.me/genre")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -23,7 +23,7 @@ function GenreGrid({ onToggleGenre, selectedGenres }) {
   const handleAddGenre = () => {
     if (newGenre.trim() === "") return;
 
-    fetch("https://pear-misty-comet.glitch.me/", {
+    fetch("https://pear-misty-comet.glitch.me/genre", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: newGenre }),
@@ -40,7 +40,7 @@ function GenreGrid({ onToggleGenre, selectedGenres }) {
   };
 
   const handleDeleteGenre = (id) => {
-    fetch(`https://pear-misty-comet.glitch.me//${id}`, {
+    fetch(`https://pear-misty-comet.glitch.me/genre/${id}`, {
       method: "DELETE",
     })
       .then(() => {
