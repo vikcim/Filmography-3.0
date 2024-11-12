@@ -9,7 +9,7 @@ function App() {
 
   // Importar les pelis desde el json server
   useEffect(() => {
-    fetch('https://creative-polarized-math.glitch.me/data')
+    fetch('https://pear-misty-comet.glitch.me/')
       .then((response) => response.json())
       .then((data) => setPeliculas(data))
       .catch((error) => console.error('No arriben datos', error));
@@ -27,7 +27,7 @@ function App() {
   const addOrUpdateFilm = (film) => {
     if (selectedFilm) {
       // EDITAR
-      fetch(`https://creative-polarized-math.glitch.me/data/${selectedFilm.id}`, {
+      fetch(`https://pear-misty-comet.glitch.me/${selectedFilm.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(film),
@@ -43,7 +43,7 @@ function App() {
     } else {
 
       // CREAR PELI
-      fetch('https://creative-polarized-math.glitch.me/data', {
+      fetch('https://pear-misty-comet.glitch.me/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(film),
