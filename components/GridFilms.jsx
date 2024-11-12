@@ -4,7 +4,7 @@ import FilmCard from './Film';
 function FilmGrid({ peliculas, handleEdit, setPeliculas }) {
   // DELETE PELI
   const handleDelete = (id) => {
-    fetch(`https://pear-misty-comet.glitch.me/data/${id}`, {
+    fetch(`https://pacific-silken-transport.glitch.me/data/${id}`, {
       method: 'DELETE',
     })
     .then((response) => response.json())  

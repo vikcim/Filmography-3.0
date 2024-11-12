@@ -5,6 +5,7 @@ export const peliculas = [
       "https://static.posters.cz/image/750/posters/matrix-hacker-i104636.jpg",
     name: "The MATRIX 1",
     year: 1999,
+    
   },
   {
     id: 2,

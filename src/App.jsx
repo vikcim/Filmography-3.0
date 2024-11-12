@@ -9,7 +9,7 @@ function App() {
 
   // Importar les pelis desde el json server
   useEffect(() => {
-    fetch('https://pear-misty-comet.glitch.me/data')
+    fetch('https://pacific-silken-transport.glitch.me/data')
       .then((response) => response.json())
       .then((data) => setPeliculas(data))
       .catch((error) => console.error('No arriben datos', error));
@@ -27,7 +27,7 @@ function App() {
   const addOrUpdateFilm = (film) => {
     if (selectedFilm) {
       // EDITAR
-      fetch(`https://pear-misty-comet.glitch.me/data/${selectedFilm.id}`, {
+      fetch(`https://pacific-silken-transport.glitch.me/data/${selectedFilm.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(film),
@@ -43,7 +43,7 @@ function App() {
     } else {
 
       // CREAR PELI
-      fetch('https://pear-misty-comet.glitch.me/data', {
+      fetch('https://pacific-silken-transport.glitch.me/data', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(film),
