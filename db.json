@@ -54,5 +54,48 @@
       "name": "The MATRIX 3",
       "year": 2003
     }
-  ]
+  ],
+  "genre":
+  [
+  {
+    "name": "Action",
+    "id": 1
+  },
+  {
+    "name": "Adventure",
+    "id": 2
+  },
+  {
+    "name": "Drama",
+    "id": 3
+  },
+  {
+    "name": "Sci-Fi",
+    "id": 4
+  },
+  {
+    "name": "Animation",
+    "id": 5
+  },
+  {
+    "name": "Horror",
+    "id": 6
+  },
+  {
+    "name": "Western",
+    "id": 7
+  },
+  {
+    "name": "Kids",
+    "id": 8
+  },
+  {
+    "name": "Comedy",
+    "id": 9
+  },
+  {
+    "name": "vicent",
+    "id": 10
+  }
+]
 }
